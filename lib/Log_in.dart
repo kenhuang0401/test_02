@@ -33,7 +33,7 @@ class log_in extends StatelessWidget{
 
 
 
-    Future<bool> gothrough() async {
+    Future<bool> gothrough() async { //歷遍SQL，確認有沒有對應的帳密
       await myDB.initDatabase();
 
       List<Map<String, dynamic>> td = await myDB.getTable();
